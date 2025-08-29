@@ -56,7 +56,7 @@ const App = () => {
   const joinRoom = () => {
     if (roomId && userName) {
       socket.emit("join", { roomId, userName });
-      setJoined(true);
+      setJoined(false);
     }
   };
 
